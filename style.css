@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/*---COLORS, FONT---*/
+:root{
+--clr-Green: hsl(75, 94%, 57%);
+--clr-White: hsl(0, 0%, 100%);
+--clr-Grey: hsl(0, 0%, 20%);
+--clr-Dark-Grey: hsl(0, 0%, 12%);
+--clr-Off-Black: hsl(0, 0%, 8%);
+--clr-font-family:inter;
+--clr-font-size:11px;}
+/*---RESET---*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+/*---BLOCKS---*/
+html{
+    background-color:var(--clr-Off-Black) ;
+    display: grid;
+    place-content: center;
+}
+body{
+    display: grid;
+    padding: 1.2rem;
+    max-width: 375px;
+    background-color: var(--clr-Dark-Grey);
+    border-radius: 1rem;
+    margin-top: 4rem;
+    font-family: var(--clr-font-family);
+    font-size: var(--clr-font-size);
+   
+}
+picture{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+}
+h1{
+    color:var(--clr-White);
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 120%;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+p{
+    text-align: center;
+    color:var(--clr-White);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+button{
+    display: block;
+    padding:0.7rem 0rem 0.7rem 0rem;
+    background-color: var(--clr-Grey);
+    color:var(--clr-White);
+    border-radius: 0.3rem;
+    font-size: 12px;
+}
+footer{ display: none;}   
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/*---ELEMENTS---*/
+picture img{
+
+border-radius: 50%;
+max-width: 4.5rem;
+}
+
+/*---MODIFIERS---*/
+
+#pLocation{
+    color:var(--clr-Green);
+    margin-bottom: 1.5rem;
+}
+#pDescription{
+    margin-bottom: 1.3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+button:active, button:hover{
+    background-color: var(--clr-Green);
+    color:var(--clr-Grey);
+    cursor: pointer;
+    cursor-color:black;
+}
+
+@media (min-width:375px){
+    body{width:305px;
+    padding: 2rem;}
+   
+    picture img{
+        max-width: 4.7rem;
+            }
+    h1{
+        font-size: 1.3rem}
+
+ }
