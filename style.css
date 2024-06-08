@@ -97,13 +97,27 @@ button:active, button:hover{
 }
 
 @media (min-width:375px){
-    body{width:375px;
-    padding: 2rem;}
-   
+    body{width:430px;
+    padding: 2rem;
+font-size: 14px;
+
+}
+   #card{
+  padding: 2.1rem;
+   }
     picture img{
         max-width: 4.7rem;
             }
     h1{
         font-size: 1.3rem}
+        p,button{
+            font-size:14px;
+        }
+        main{
+            row-gap: 0.9rem;
+        }
+        button{
+            padding:0.9rem 0rem 0.9rem 0rem;
+        }
 
  }
