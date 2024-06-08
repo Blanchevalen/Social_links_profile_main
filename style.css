@@ -22,12 +22,17 @@ html{
     place-content: center;
 }
 body{
+    display: flex;
+min-height: 100vh;
+justify-content: center;
+align-items:center;}
+#card{
     display: grid;
     padding: 1.2rem;
-    max-width: 375px;
+    width: 90vw;
     background-color: var(--clr-Dark-Grey);
     border-radius: 1rem;
-    margin-top: 4rem;
+    
     font-family: var(--clr-font-family);
     font-size: var(--clr-font-size);
    
@@ -92,7 +97,7 @@ button:active, button:hover{
 }
 
 @media (min-width:375px){
-    body{width:305px;
+    body{width:375px;
     padding: 2rem;}
    
     picture img{
